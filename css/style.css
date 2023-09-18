@@ -1,0 +1,571 @@
+@font-face {
+	font-family: 'eraser';
+	src: url('../fonts/eraser.eot');
+	src: local('☺'), url('../fonts/eraser.woff') format('woff'), url('../fonts/eraser.ttf') format('truetype'), url('../fonts/eraser.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Chalk';
+	src: url('../fonts/Chalk.eot');
+	src: local('☺'), url('../fonts/Chalk.woff') format('woff'), url('../fonts/Chalk.ttf') format('truetype'), url('../fonts/Chalk.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Обнуление страницы ===================================================================================== */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* Color Theme Swatches in Hex */
+.Colorful-Pencils-End-Macro-Background-1-hex {
+	color: #A6173D;
+}
+
+.Colorful-Pencils-End-Macro-Background-2-hex {
+	color: #2669BF;
+}
+
+.Colorful-Pencils-End-Macro-Background-3-hex {
+	color: #D9AA1E;
+}
+
+.Colorful-Pencils-End-Macro-Background-4-hex {
+	color: #F28F16;
+}
+
+.Colorful-Pencils-End-Macro-Background-5-hex {
+	color: #BF7C63;
+}
+
+/* Color Theme Swatches in Hex */
+.Everlasting---RnR-Mural-1-hex {
+	color: #F21D92;
+}
+
+.Everlasting---RnR-Mural-2-hex {
+	color: #020F59;
+}
+
+.Everlasting---RnR-Mural-3-hex {
+	color: #044BD9;
+}
+
+.Everlasting---RnR-Mural-4-hex {
+	color: #77DCF2;
+}
+
+.Everlasting---RnR-Mural-5-hex {
+	color: #0DF205;
+}
+
+
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #fff;
+	background: url('../img/1619389386_13-phonoteka_org-p-temnii-fon-dlya-menyu-15.jpg') 0 0/cover no-repeat fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: #020f59d3;
+}
+
+.header__container {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 0px 0px 30px;
+	min-height: 80px;
+}
+
+.header__logo {
+	background: url('/img/logo.png') 0 0/contain no-repeat local;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin: 10px;
+	z-index: 5;
+}
+
+.header__menu {}
+
+.menu {}
+
+.menu__icon {}
+
+.menu__body {}
+
+.menu__list {}
+
+.menu__list li {
+	position: relative;
+	margin: 0px 10px 0px 10px;
+}
+
+.menu__link {
+	font-size: 1.1rem;
+}
+
+.menu__link:hover,
+.menu__sub-link:hover {
+	text-decoration: underline;
+	color: #e90909;
+}
+
+.menu__sublist {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #BF7C63;
+	padding: 10px;
+	min-width: 140px;
+}
+
+.menu__sublist li {
+	margin: 10px;
+}
+
+.menu__sublist li:last-child {
+	margin: 0px 10px;
+}
+
+.menu__arrow {
+	display: none;
+}
+
+.menu__sub-link {}
+
+.page {
+	flex: 1 1 auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page {
+	padding: 90px 0px 30px 0px;
+}
+
+.page__section {
+	margin: 0 auto;
+	padding: 30px;
+	max-width: 1200px;
+}
+
+.timetables__block {}
+
+.timetables__item {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.timetables__column {
+	border-radius: 10px;
+	flex: 0 1 300px;
+	margin: 25px;
+	padding: 25px;
+	width: 150px;
+	background: #F2EA79;
+
+
+}
+
+.week {
+	padding: 15px;
+	font-family: 'Chalk';
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #020F59;
+}
+
+.day {
+	color: #000;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+._schedule {
+	display: block;
+	background: url('/img/6505a6836bd7e.jpg') 50% 0/cover no-repeat local;
+	height: 100%;
+	padding: 50px 20px 220px;
+	color: #000;
+}
+
+._schedule p {
+	text-align: center;
+}
+
+.bold {
+	font-family: 'Chalk';
+	font-size: 1.7rem;
+	color: #020F59;
+}
+
+._holidays {}
+
+.holidays__body {}
+
+.holidays__item {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.holidays__column {
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid #fff;
+	margin: 10px;
+	padding: 10px;
+}
+
+.holidays__quarter {
+	font-family: 'Chalk';
+	font-size: 2rem;
+	text-transform: uppercase;
+	background-color: #A6173D;
+}
+
+._autumn {
+	color: #BF7C63;
+}
+
+._winter {
+	color: #77DCF2;
+}
+
+._spring {
+	color: #0DF205;
+}
+
+._summer {
+	color: #FFE400;
+}
+
+.autumn__timer,
+.winter__timer,
+.spring__timer,
+.summer__timer {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	padding: 30px 0px;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.autumn__block,
+.winter__block,
+.spring__block,
+.summer__block {
+	display: flex;
+	flex-direction: column;
+
+}
+
+._days {}
+
+.days__title {
+	color: #044BD9;
+}
+
+.autumn__days {}
+
+.separator {
+	font-size: 1.7rem;
+	padding: 5px;
+	align-items: center;
+}
+
+
+.holidays__time {
+	background: #F2EA79;
+	font-size: 1.2rem;
+	color: #020F59;
+	padding: 20px 0px;
+}
+
+.another_holidays {
+	/* margin: 20px; */
+}
+
+.another_holidays h2,
+.transfer__days h2 {
+	color: #F21D92;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Eraser';
+}
+
+.transfer__days {}
+
+.page__section_1 {}
+
+.page__title {
+	font-family: 'Chalk';
+	font-size: 3rem;
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+}
+
+.page__text {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.page__section_2 {}
+
+.page__sub-title {
+	font-family: 'Eraser';
+	font-size: 2rem;
+	margin: 0px 0px 20px 0px;
+	color: #F21D92;
+	text-align: center;
+}
+
+.page__section_3 {}
+
+.page__section_4 {}
+
+.blanks__title {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+.blanks__text {}
+
+.blanks_body {
+	background: url('/img/tetrad-v-kletku.jpg') 0 0/cover no-repeat local;
+	padding: 20px;
+	color: #000;
+}
+
+.blanks__title {}
+
+.blanks__text {}
+
+.blanks__title-header p {
+	padding: 0px 0px 0px 70%;
+}
+
+.blanks__title-header span {
+	padding: 20px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.blanks__subtitle {
+	font-size: 2rem;
+	text-align: center;
+	margin: 20px 0;
+
+}
+
+.blanks__text-body {}
+
+.paragraph {
+	text-indent: 50px;
+	margin: 10px 0;
+}
+
+.siganture__block {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0px 30px 0px;
+
+}
+
+.date {}
+
+.signature {}
+
+
+.footer {
+	background: #020f59a8;
+}
+
+.footer__text {
+	text-align: center;
+	padding: 30px;
+}
+
+body._pc .menu__list>li:hover .menu__sublist {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0, 0);
+	pointer-events: all;
+}
+
+body._touch .menu__arrow {
+	display: block;
+	width: 0;
+	height: 0;
+	transition: transform 0.3s ease 0s;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 12px solid #fff;
+	margin: 0px 0px 0px 5px;
+}
+
+body._touch .menu__list>li {
+	display: flex;
+	align-items: center;
+}
+
+body._touch .menu__link {
+	flex: 1 1 auto;
+}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1024px) {
+	.blanks__title-header p {
+		padding: 0px 0px 0px 50%;
+	}
+}
+
+@media (min-width: 767px) {
+	/* .blanks__title-header p {
+		padding: 0;
+		text-align: right;
+	} */
+
+	.menu__list {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu__list li {
+		padding: 10px 0;
+	}
+
+	.menu__sublist {
+		transform: translate(0px 10%);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		pointer-events: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.day {
+		font-size: 1rem;
+	}
+
+	.holidays__column {
+		margin: 5px 0;
+	}
+}
